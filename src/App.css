@@ -1,38 +1,51 @@
+#root,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 .App {
-  text-align: center;
+  background: url("./images/nature.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.container {
+  font-size: 2rem;
+  background-color: #ffeadb;
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2% 3%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  -webkit-box-shadow: 7px 20px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 20px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 20px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.button {
+  cursor: pointer;
+  margin: 30px auto 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  display: inline;
+  background-color: springgreen;
+  font-size: 1rem;
+  transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.button:hover {
+  transform: scale(1.07);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  -webkit-box-shadow: 0px 3px 10px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 10px 10px rgba(0, 0, 0, 0.5);
 }
